@@ -1,6 +1,5 @@
 // Online C compiler to run C program online//50101
 #include <stdio.h>
-
 int main() {
 int i, n,found=0;
 scanf("%d",&n);
