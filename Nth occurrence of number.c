@@ -11,6 +11,8 @@ Input:
 
 Output:
 6 (3rd occurrence of 6 is at index 6)*/
+
+
 #include<stdio.h>
 int main(){
     int arr[10],n,i,count=0,num,occ;
