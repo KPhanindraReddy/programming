@@ -1,21 +1,25 @@
- #include <stdio.h>
+// Online C compiler to run C program online
+#include <stdio.h>
 int f(int n){
-      static int arr[1000] = {0};
-if(n<=2){
-    return n;
-}
-if(arr[n-1]==0){
-    arr[n-1]=f(n-1);
-}
-if(arr[n-2]==0){
-    arr[n-2]=f(n-2);
-}
-return arr[n-1]+arr[n-2];
+     static int dp[100]={0};
+    if(n<=2){
+        return n;
+    }
+    if(dp[n-1]==0){
+        dp[n-1]=f(n-1);
+    }
+    if(dp[n-2]==0){
+        dp[n-2]=f(n-2);
+    }
+    return dp[n-1]+dp[n-2];
 }
 
 int main() {
- int i,j,n;
- scanf("%d",&n);
- printf("%d",f(n));
-return 0;
+  
+   int n;
+  
+   scanf("%d",&n);
+   for(int i=0;i<n;i++) printf("%d..",f(i));
+
+    return 0;
 }
