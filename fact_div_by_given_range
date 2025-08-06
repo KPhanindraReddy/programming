@@ -1,0 +1,22 @@
+//program for fact bw thw given range with are / 7 only 
+#include <stdio.h>
+void fact(int i) {
+    int f = 1;   //use long long %lld
+    for (int j = 1; j <= i; j++) {
+        f *= j;
+    }
+    printf("fact of %d is %d\n", i, f);
+}
+int main() {
+    int l,u;
+    scanf("%d",&l);
+    scanf("%d",&u);
+    
+   for(int i=l;i<=u;i++){
+       if(i%7==0){
+           fact(i);
+       }
+   }
+
+    return 0;
+}
