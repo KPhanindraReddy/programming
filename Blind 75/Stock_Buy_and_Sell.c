@@ -1,3 +1,19 @@
+/*
+The algorithm tracks the lowest price seen so far (mini).
+
+At each step, it calculates the profit if you sold the stock today (Arr[i] - mini).
+
+It keeps updating the maximum profit possible.
+
+In the example:
+
+Best time to buy = Day with price 1
+
+Best time to sell = Day with price 6
+
+Profit = 6 - 1 = 5
+    */
+
 //Method:1
 #include <stdio.h>
 int max(int a,int b){
