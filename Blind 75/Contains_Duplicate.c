@@ -8,7 +8,7 @@ Explanation: arr[1] + arr[3] = 14. So, the answer is “YES” for the first var
 Example 2:
 Input Format: N = 5, arr[] = {2,6,5,8,11}, target = 15
 Result: NO (for 1st variant)
-	[-1, -1] (for 2nd variant)
+	[-1, -1] (for 2nd variant) 
 Explanation: There exist no such two numbers whose sum is equal to the target.
 */
 
