@@ -5,7 +5,7 @@ int cmp(const void *a,const void *b){
     return (*(int*)a)-(*(int*)b);
 }
 int main() {
-    int n,tar,sum,f;
+    int n,tar,sum,f; 
     printf("enter the size of array:");
     scanf("%d",&n);
     int arr[n];
